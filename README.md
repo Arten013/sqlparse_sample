@@ -1,6 +1,6 @@
 # sqlparseサンプルコード
 
-(sqlparseの解説記事中)[https://blog.hoxo-m.com/entry/sqlparse_lex]で紹介したサンプルコードです。
+[sqlparseの解説記事中](https://blog.hoxo-m.com/entry/sqlparse_lex) で紹介したサンプルコードです。
 詳しくは記事をご参照ください。
 
 また、何かございましたらお気軽に記事中へのコメントでご指摘ください。
