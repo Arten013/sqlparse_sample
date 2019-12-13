@@ -18,13 +18,13 @@ def find_hive_ddl(directory: str, table: str, db: Optional[str] = None):
             if find_table_definition(f.read(), table, db):
                 return p
     raise FileNotFoundError(
-        "DDL file of {table_name} not found.".format(table_name=table)
+        "DDL file of {table} not found.".format(table=table)
     )
 
 
 def find_table_definition(
         sql: str, table: str, db: Optional[str] = None) -> Optional[TokenType]:
-    """`table_name`で指定したテーブルの定義を文字列`sql`中から見つける"""
+    """`table`で指定したテーブルの定義を文字列`sql`中から見つける"""
     db = db or DEFAULT_DB
     # 1. パースしてトークン列に分割
     for query in sqlparse.parse(sql):
